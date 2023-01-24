@@ -1,3 +1,4 @@
+using LineInc.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,11 @@ namespace LineInc
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LineInc", Version = "v1" });
             });
+        }
+
+        public void InjetaDependencias(IServiceCollection services)
+        {
+            services.AdicionaDependencias();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

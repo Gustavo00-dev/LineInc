@@ -1,7 +1,12 @@
-﻿namespace LineInc.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace LineInc.Controllers
 {
-    public class LoginController
+
+    public class LoginController : Controller
     {
+        
+        
 
     }
 }
